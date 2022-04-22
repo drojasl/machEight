@@ -1,0 +1,12 @@
+<div class="text-center m-2">
+    <h2>{{ 'user_input.description' | translate}}</h2>
+</div>
+<div class="text-center m-2">
+    <input type="text" min="0" max="300" maxlength="3" pattern="[0-9]*" class="form-control" placeholder="Height (inches)" #userInches>
+    <small><label>{{ 'user_input.help' | translate}}</label></small>
+</div>
+<div class="text-center m-5">
+    <button type="submit" class="btn btn-primary mb-3" (click)="sendValue(userInches.value)">{{ 'global.submit' | translate}}</button>
+    <br>
+    <small class="text-danger" *ngIf="errorInput"><label>{{ 'user_input.error' | translate}}</label></small>
+</div>

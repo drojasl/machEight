@@ -1,0 +1,21 @@
+{
+    "global": {
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "continue": "Continue",
+        "language": "Language",
+        "save": "Save",
+        "send": "Send",
+        "submit": "Submit"
+    },
+    "app": {
+        "welcome": "Welcome to Diego Rojas' code challenge",
+        "No_matches_found": "No matches found"
+    },
+    "user_input": {
+        "description": "Enter height value (inches)",
+        "placeholder": "Height (inches)",
+        "help": "The system will print a list of all pairs of players whose height in inches adds up to the input value",
+        "error": "Please enter a valid numeric value"
+    }
+}

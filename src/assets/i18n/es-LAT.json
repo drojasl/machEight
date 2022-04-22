@@ -1,0 +1,20 @@
+{
+    "global": {
+        "cancel": "Cancelar",
+        "confirm": "Confirmar",
+        "continue": "Continuar",
+        "language": "Idioma",
+        "save": "Guardar",
+        "send": "Enviar",
+        "submit": "Enviar"
+    },
+    "app": {
+        "welcome": "Bienvenido a la prueba de codigo de Diego Rojas"
+    },
+    "user_input": {
+        "description": "Ingrese el valor de la altura (en pulgadas)",
+        "placeholder": "Altura (en pulgadas)",
+        "help": "El sistema imprimirá una lista de pares de jugadores cuya altura sea la suma del valor ingresado",
+        "error": "Por favor ingrese un valor numérico válido"
+    }
+}
