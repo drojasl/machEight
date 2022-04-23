@@ -9,7 +9,8 @@
         "submit": "Enviar"
     },
     "app": {
-        "welcome": "Bienvenido a la prueba de codigo de Diego Rojas"
+        "welcome": "Bienvenido a la prueba de codigo de Diego Rojas",
+        "No_matches_found": "No se encontraron resultados"
     },
     "user_input": {
         "description": "Ingrese el valor de la altura (en pulgadas)",

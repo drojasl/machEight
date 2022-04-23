@@ -1,5 +1,4 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-user-input',
@@ -10,14 +9,16 @@ export class UserInputComponent {
   @Output() submitValue = new EventEmitter<number>();
   public errorInput: boolean = false;
 
-  constructor(private _translateService: TranslateService) { }
+  constructor() { }
 
   public sendValue(userInches :string) {
     this.errorInput = false;
     if(Number(userInches) === parseFloat(userInches)) {
+      // Send user value to parent
       this.submitValue.emit(Number(userInches));
     }
     else {
+      // Send -1 to parent than represents an invalid input
       this.submitValue.emit(-1);
       this.errorInput = true;
     }

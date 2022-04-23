@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 import { NbaPlayerDataI } from '../../models/interfaces/nba-player-data.interface';
 
 @Injectable({
@@ -13,6 +12,7 @@ export class NbaPlayersService {
   constructor(private _http: HttpClient) { }
 
   public getNbaPlayersData() :Observable<NbaPlayerDataI> {
+    // Get data from API
     return this._http.get<NbaPlayerDataI>(this._urlService);
   }
 }
